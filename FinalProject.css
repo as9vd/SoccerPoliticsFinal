@@ -1,0 +1,214 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    background-color: #ECEFF4;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.title-header {
+    color: black;
+    font-size: 5.2rem;
+    font-weight: 800;
+    margin: 0rem;
+    margin-top: 1.2rem;
+    padding: 0rem;
+}
+
+.intro-picture {
+    width: 50rem;
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    max-width: 100%;
+}
+
+.paragraph {
+    font-size: 2.25rem;
+    font-weight: 500;
+    width: 60%;
+    line-height: 3.0rem;
+    margin: 0rem;
+}
+
+.paragraph-container {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.picture {
+    max-width: 100%;
+}
+
+.picture-caption-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem;
+    padding: 0rem;
+    gap: 0rem;
+}
+
+.picture-caption-container img {
+    width: 40rem;
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+}
+
+.caption {
+    font-size: 1.4rem;
+    margin: 0rem;
+    margin-top: 1rem;
+}
+
+.icon-photo {
+    border: 0.2rem solid black;
+    border-radius: 5rem;
+    width: 15rem;
+    transition: transform 0.3s ease, filter 0.2s ease-in;
+    cursor: pointer;
+    height: 15rem;
+    object-fit: cover;
+    /* This will cover the area without stretching the image. */
+}
+
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+    /* Ensures the wrapper is only as large as its contents. */
+}
+
+.tooltip-text {
+    position: absolute;
+    bottom: 100%;
+    /* Position above the image. */
+    left: 50%;
+    /* Center the tooltip. */
+    transform: translateX(-50%);
+    /* Center align the tooltip. */
+    visibility: hidden;
+    white-space: nowrap;
+    /* Prevents the tooltip from wrapping. */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Softer black with some transparency. */
+    color: #f0f0f0;
+    /* Soft white color. */
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    z-index: 1;
+    /* Ensures the tooltip is on top. */
+    opacity: 0;
+    /* Start fully transparent. */
+    transition: opacity 0.20s, visibility 0.20s;
+    /* Smooth transition for opacity and visibility. */
+
+    font-size: 1.4rem;
+}
+
+.icon-photo:hover+.tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    /* Fully visible when hovered. */
+}
+
+.icon-photo:hover {
+    filter: contrast(2.5) drop-shadow(1.5px 1.5px 1.5px black);
+}
+
+.routing-table {
+    border-left: 2px black solid;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.5rem;
+
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    align-items: end;
+    overflow: hidden;
+    max-width: 20vw;
+
+    background-color: #f8f7ff;
+}
+
+.routing-button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.1s linear;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: inherit;
+
+    color: black;
+}
+
+.routing-button:hover {
+    transform: scale(1.15) rotate(2deg);
+}
+
+.routing-button:visited {
+    color: black;
+}
+
+.routing-headline {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.routing-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+    background-color: inherit;
+}
+
+.sub-heading {
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.name-header {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.section-leader-title {
+    font-size: 4.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
