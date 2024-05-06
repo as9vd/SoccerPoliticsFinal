@@ -4,7 +4,8 @@ html {
 
 * {
     background-color: #ECEFF4;
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Reddit Sans', sans-serif;
     font-size: 10px;
 }
 
@@ -34,7 +35,7 @@ html {
 
 .paragraph {
     font-size: 2.1rem;
-    font-weight: 500;
+    font-weight: 400;
     width: 55%;
     line-height: 3.0rem;
     margin: 0rem;
