@@ -220,3 +220,17 @@ html {
     flex-direction: row;
     gap: 1rem;
 }
+
+.bibliography-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.book-img {
+    width: 9rem;
+    height: 13.5rem;
+    border: 0.2rem solid black;
+}
