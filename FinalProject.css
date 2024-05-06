@@ -18,7 +18,7 @@ html {
 
 .title-header {
     color: black;
-    font-size: 5.2rem;
+    font-size: 5.8rem;
     font-weight: 800;
     margin: 0rem;
     margin-top: 1.2rem;
@@ -35,7 +35,7 @@ html {
 .paragraph {
     font-size: 2.1rem;
     font-weight: 500;
-    width: 60%;
+    width: 55%;
     line-height: 3.0rem;
     margin: 0rem;
 }
@@ -185,15 +185,22 @@ html {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: flex-end;
     gap: 0.2rem;
     background-color: inherit;
 }
 
-.sub-heading {
-    font-size: 2.6rem;
-    font-weight: bold;
+.sub-heading,
+.sub-sub-heading {
+    font-size: 3.4rem;
+    font-weight: 900;
     margin: 0;
     padding: 0;
+}
+
+.sub-sub-heading {
+    font-size: 2.6rem;
+    font-weight: 700;
 }
 
 .name-header {
@@ -202,7 +209,7 @@ html {
 }
 
 .section-leader-title {
-    font-size: 4.2rem;
+    font-size: 5.0rem;
     margin: 0;
     padding: 0;
 }
