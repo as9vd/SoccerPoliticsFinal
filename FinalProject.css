@@ -75,6 +75,7 @@ html {
     font-size: 1.4rem;
     margin: 0rem;
     margin-top: 1rem;
+    text-align: center;
 }
 
 .icon-photo {
@@ -225,8 +226,8 @@ html {
 .bibliography-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 0.5rem;
-    width: 60%;
+    gap: 2.5rem;
+    width: 65%;
     box-sizing: border-box;
 }
 
@@ -234,4 +235,12 @@ html {
     width: 9rem;
     height: 13.5rem;
     border: 0.2rem solid black;
+    transition: transform 0.15s ease, filter 0.15s ease-in;
+}
+
+.book-img:hover {
+    visibility: visible;
+    opacity: 1;
+    filter: drop-shadow(1.5px 1.5px 1.5px black);
+    transform: scale(1.05);
 }
