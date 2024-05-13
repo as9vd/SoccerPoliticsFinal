@@ -33,12 +33,17 @@ html {
     max-width: 100%;
 }
 
-.paragraph {
+.paragraph,
+.paragraph b {
     font-size: 2.1rem;
     font-weight: 400;
     width: 60%;
     line-height: 3.0rem;
     margin: 0rem;
+}
+
+.paragraph b {
+    font-weight: 900;
 }
 
 .paragraph-container {
@@ -235,7 +240,7 @@ html {
     width: 9rem;
     height: 13.5rem;
     border: 0.2rem solid black;
-    transition: transform 0.15s ease, filter 0.15s ease-in;
+    transition: transform 0.05s ease, filter 0.05s ease-in;
 }
 
 .book-img:hover {
